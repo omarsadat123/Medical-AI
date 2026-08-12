@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.streamlit/secrets.toml
+exports/*
+!exports/.gitkeep
+data/*.db
+data/*.db-*
+*.log
+.DS_Store
+Thumbs.db
