@@ -5,9 +5,20 @@
 [![FastAPI](https://img.shields.io/badge/API-FastAPI-009688.svg)](https://fastapi.tiangolo.com)
 [![Educational](https://img.shields.io/badge/use-educational%20%2F%20portfolio-orange.svg)](#important-disclaimer)
 
-**MediParse** turns lab PDFs, scans, and pasted text into structured biomarker insights, plain-language explanations, trends, educational risk estimates, and clinician-ready PDF summaries.
+<div style="background: linear-gradient(90deg, #0f766e 0%, #0b1220 100%); border-radius: 16px; padding: 22px 22px; color: #ffffff; box-shadow: 0 8px 24px rgba(2, 6, 23, 0.25);">
+  <div style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px; font-weight: 700; letter-spacing: -0.02em;">MediParse</div>
+  <div style="margin-top: 6px; font-size: 16px; opacity: 0.92;">Educational lab-report understanding pipeline for scans & text</div>
+  <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 10px;">
+    <span style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 6px 12px; font-weight: 700; font-size: 13px;">OCR → Structured Biomarkers</span>
+    <span style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 6px 12px; font-weight: 700; font-size: 13px;">Explainability-first UX</span>
+    <span style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 6px 12px; font-weight: 700; font-size: 13px;">Trends + Risk (educational)</span>
+    <span style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 6px 12px; font-weight: 700; font-size: 13px;">Clinician PDF export</span>
+  </div>
+</div>
 
-Built with **Streamlit**, **FastAPI**, **SQLite**, **scikit-learn / XGBoost**, and optional free LLMs (**Ollama**, **Groq**, **Gemini**).
+**MediParse** is a research-style engineering demo: an end-to-end pipeline that converts lab report inputs (PDFs, scans, and pasted text) into structured biomarkers, plain-language explanations, longitudinal trends (history/compare), and educational risk estimates—with clear safety framing and clinician-ready PDF summaries.
+
+The system integrates **Streamlit** (UI), **FastAPI** (REST API), **SQLite** (persistence), **scikit-learn / XGBoost** (ML risk models), and optional free LLM providers (**Ollama**, **Groq**, **Gemini**).
 
 ---
 
@@ -23,6 +34,8 @@ Built with **Streamlit**, **FastAPI**, **SQLite**, **scikit-learn / XGBoost**, a
 ## Table of contents
 
 - [Quick start](#quick-start)
+- [About](#about)
+- [Problems solved](#problems-solved)
 - [Features](#features)
 - [Demo workflow](#demo-workflow)
 - [Screenshots](#screenshots)
@@ -47,6 +60,37 @@ Built with **Streamlit**, **FastAPI**, **SQLite**, **scikit-learn / XGBoost**, a
 - [License](#license)
 
 ---
+
+## About
+
+MediParse combines OCR, biomarker parsing, explainable scoring, and lightweight ML risk modeling into a single end-to-end workflow. The project is designed for learning, portfolio demonstration, and interface research on how laboratory results can be transformed into readable, structured educational artifacts.
+
+**Core design goals:**
+
+1. Reduce information friction: extract values from scans and PDFs, then normalize them to known biomarker keys.
+2. Improve interpretability: show reference-range-aware statuses and marker-level human explanations.
+3. Support longitudinal reasoning: compare and trend biomarkers across saved analyses.
+4. Keep safety boundaries explicit: educational outputs only, with clinician PDF summaries for discussion.
+
+## Problems solved
+
+MediParse targets practical gaps in lab-report understanding workflows:
+
+- **Scan/PDF usability problem:** OCR + PDF extraction turn unstructured documents into structured marker/value records.
+- **Normalization & parsing problem:** alias-aware biomarker detection handles OCR noise and lab naming variations.
+- **Comprehension problem:** marker-level explanations, educational health scoring, and risk bands translate results into understandable narratives.
+- **Longitudinal insight problem:** SQLite persistence enables History, Compare, and Trends so users can observe changes over time.
+- **Integration & deployment problem:** FastAPI exposes REST endpoints for analyze, history, risk, chat, and PDF export.
+
+## Research Contributions
+
+This project contributes an end-to-end, explainability-first pipeline for transforming laboratory data into educational artifacts:
+
+- **OCR-to-biomarker normalization:** robust alias mapping to reduce OCR and formatting variance.
+- **Interpretability layer:** reference-range-aware status flags and marker-level plain-language explanations.
+- **Longitudinal study interface:** persisted histories with compare/delta and biomarker trend visualization.
+- **Educational risk modeling:** interpretable risk bands using supervised ML models (portfolio/demo dataset).
+- **Deployment-ready architecture:** shared analyze pipeline exposed through a FastAPI REST API + clinician PDF generation.
 
 ## Quick start
 
