@@ -1,0 +1,298 @@
+{
+  "hemoglobin": {
+    "name": "Hemoglobin",
+    "aliases": ["hemoglobin", "haemoglobin", "hb", "hgb"],
+    "unit": "g/dL",
+    "male": {"low": 13.0, "high": 17.0},
+    "female": {"low": 12.0, "high": 15.0},
+    "default": {"low": 12.0, "high": 17.0},
+    "category": "Iron Status",
+    "explanation": {
+      "low": "Your hemoglobin is below the typical reference range. Low hemoglobin may relate to anemia, iron deficiency, or other conditions. Discuss these findings with your healthcare provider.",
+      "high": "Your hemoglobin is above the typical reference range. Elevated hemoglobin can have several causes. Discuss these findings with your healthcare provider.",
+      "normal": "Your hemoglobin is within the typical reference range."
+    }
+  },
+  "hematocrit": {
+    "name": "Hematocrit",
+    "aliases": ["hematocrit", "haematocrit", "hct", "pcv"],
+    "unit": "%",
+    "male": {"low": 40.0, "high": 50.0},
+    "female": {"low": 36.0, "high": 46.0},
+    "default": {"low": 36.0, "high": 50.0},
+    "category": "Iron Status",
+    "explanation": {
+      "low": "Your hematocrit is below the typical reference range. This often accompanies low hemoglobin and may relate to anemia. Discuss with your healthcare provider.",
+      "high": "Your hematocrit is above the typical reference range. Discuss these findings with your healthcare provider.",
+      "normal": "Your hematocrit is within the typical reference range."
+    }
+  },
+  "rbc": {
+    "name": "RBC Count",
+    "aliases": ["rbc", "red blood cell", "red blood cells", "erythrocyte"],
+    "unit": "million/μL",
+    "male": {"low": 4.5, "high": 5.5},
+    "female": {"low": 4.0, "high": 5.0},
+    "default": {"low": 4.0, "high": 5.5},
+    "category": "Iron Status",
+    "explanation": {
+      "low": "Your red blood cell count is below the typical reference range. Discuss with your healthcare provider.",
+      "high": "Your red blood cell count is above the typical reference range. Discuss with your healthcare provider.",
+      "normal": "Your red blood cell count is within the typical reference range."
+    }
+  },
+  "wbc": {
+    "name": "WBC Count",
+    "aliases": ["wbc", "white blood cell", "white blood cells", "leukocyte", "total leukocyte", "tlc"],
+    "unit": "×10³/μL",
+    "default": {"low": 4.0, "high": 11.0},
+    "category": "Immune",
+    "explanation": {
+      "low": "Your white blood cell count is below the typical reference range. This may relate to infection risk or other factors. Discuss with your healthcare provider.",
+      "high": "Your white blood cell count is above the typical reference range. This can occur with infection, inflammation, or other conditions. Discuss with your healthcare provider.",
+      "normal": "Your white blood cell count is within the typical reference range."
+    }
+  },
+  "platelets": {
+    "name": "Platelets",
+    "aliases": ["platelet", "platelets", "plt", "thrombocyte"],
+    "unit": "×10³/μL",
+    "default": {"low": 150.0, "high": 450.0},
+    "category": "Blood Count",
+    "explanation": {
+      "low": "Your platelet count is below the typical reference range. Discuss bleeding/bruising concerns with your healthcare provider.",
+      "high": "Your platelet count is above the typical reference range. Discuss these findings with your healthcare provider.",
+      "normal": "Your platelet count is within the typical reference range."
+    }
+  },
+  "glucose_fasting": {
+    "name": "Fasting Glucose",
+    "aliases": ["fasting glucose", "glucose fasting", "fbs", "fasting blood sugar", "blood sugar fasting", "glucose (fasting)"],
+    "unit": "mg/dL",
+    "default": {"low": 70.0, "high": 99.0, "borderline_high": 125.0},
+    "category": "Blood Sugar",
+    "explanation": {
+      "low": "Your fasting glucose is below the typical reference range. Discuss symptoms such as dizziness or shakiness with your healthcare provider.",
+      "high": "Your fasting glucose is above the typical reference range. Elevated fasting glucose may relate to prediabetes or diabetes risk. Discuss with your healthcare provider.",
+      "borderline": "Your fasting glucose is in a borderline/prediabetes range (typically 100–125 mg/dL). Discuss lifestyle and follow-up testing with your healthcare provider.",
+      "normal": "Your fasting glucose is within the typical reference range."
+    }
+  },
+  "glucose_random": {
+    "name": "Random Glucose",
+    "aliases": ["random glucose", "glucose random", "rbs", "blood glucose", "glucose"],
+    "unit": "mg/dL",
+    "default": {"low": 70.0, "high": 140.0},
+    "category": "Blood Sugar",
+    "explanation": {
+      "low": "Your glucose is below the typical reference range. Discuss with your healthcare provider.",
+      "high": "Your glucose is above the typical reference range. Discuss with your healthcare provider.",
+      "normal": "Your glucose is within the typical reference range."
+    }
+  },
+  "hba1c": {
+    "name": "HbA1c",
+    "aliases": ["hba1c", "hb a1c", "glycated hemoglobin", "a1c", "glycosylated haemoglobin"],
+    "unit": "%",
+    "default": {"low": 4.0, "high": 5.6, "borderline_high": 6.4},
+    "category": "Blood Sugar",
+    "explanation": {
+      "low": "Your HbA1c is below the typical reference range. Discuss with your healthcare provider.",
+      "high": "Your HbA1c is above the typical diabetes threshold. This reflects average blood sugar over ~3 months. Discuss with your healthcare provider.",
+      "borderline": "Your HbA1c is in a prediabetes range (typically 5.7–6.4%). Discuss lifestyle and follow-up with your healthcare provider.",
+      "normal": "Your HbA1c is within the typical reference range."
+    }
+  },
+  "total_cholesterol": {
+    "name": "Total Cholesterol",
+    "aliases": ["total cholesterol", "cholesterol total", "serum cholesterol", "cholesterol"],
+    "unit": "mg/dL",
+    "default": {"low": 0.0, "high": 200.0, "borderline_high": 239.0},
+    "category": "Heart Health",
+    "explanation": {
+      "high": "Your total cholesterol is elevated. Discuss heart-health risk factors and next steps with your healthcare provider.",
+      "borderline": "Your total cholesterol is in a borderline range. Discuss lifestyle and follow-up with your healthcare provider.",
+      "normal": "Your total cholesterol is within a commonly desirable range.",
+      "low": "Your total cholesterol is below typical values. Discuss with your healthcare provider if unexpected."
+    }
+  },
+  "ldl": {
+    "name": "LDL Cholesterol",
+    "aliases": ["ldl", "ldl cholesterol", "ldl-c", "bad cholesterol"],
+    "unit": "mg/dL",
+    "default": {"low": 0.0, "high": 100.0, "borderline_high": 129.0},
+    "category": "Heart Health",
+    "explanation": {
+      "high": "Your LDL cholesterol is elevated. LDL is often called 'bad' cholesterol. Discuss cardiovascular risk with your healthcare provider.",
+      "borderline": "Your LDL is in a near-optimal/borderline range. Discuss with your healthcare provider.",
+      "normal": "Your LDL cholesterol is within a commonly desirable range.",
+      "low": "Your LDL cholesterol is low. Discuss with your healthcare provider if unexpected."
+    }
+  },
+  "hdl": {
+    "name": "HDL Cholesterol",
+    "aliases": ["hdl", "hdl cholesterol", "hdl-c", "good cholesterol"],
+    "unit": "mg/dL",
+    "male": {"low": 40.0, "high": 100.0},
+    "female": {"low": 50.0, "high": 100.0},
+    "default": {"low": 40.0, "high": 100.0},
+    "category": "Heart Health",
+    "invert_status": true,
+    "explanation": {
+      "low": "Your HDL cholesterol is below the typical protective range. HDL is often called 'good' cholesterol. Discuss with your healthcare provider.",
+      "high": "Your HDL cholesterol is in a favorable range.",
+      "normal": "Your HDL cholesterol is within the typical reference range."
+    }
+  },
+  "triglycerides": {
+    "name": "Triglycerides",
+    "aliases": ["triglyceride", "triglycerides", "tg"],
+    "unit": "mg/dL",
+    "default": {"low": 0.0, "high": 150.0, "borderline_high": 199.0},
+    "category": "Heart Health",
+    "explanation": {
+      "high": "Your triglycerides are elevated. Discuss diet, lifestyle, and follow-up with your healthcare provider.",
+      "borderline": "Your triglycerides are in a borderline range. Discuss with your healthcare provider.",
+      "normal": "Your triglycerides are within a commonly desirable range.",
+      "low": "Your triglycerides are low. Discuss with your healthcare provider if unexpected."
+    }
+  },
+  "creatinine": {
+    "name": "Creatinine",
+    "aliases": ["creatinine", "serum creatinine", "creat"],
+    "unit": "mg/dL",
+    "male": {"low": 0.7, "high": 1.3},
+    "female": {"low": 0.6, "high": 1.1},
+    "default": {"low": 0.6, "high": 1.3},
+    "category": "Kidney Function",
+    "explanation": {
+      "low": "Your creatinine is below the typical reference range. Discuss with your healthcare provider.",
+      "high": "Your creatinine is above the typical reference range. This may relate to kidney function. Discuss with your healthcare provider.",
+      "normal": "Your creatinine is within the typical reference range."
+    }
+  },
+  "bun": {
+    "name": "Blood Urea Nitrogen (BUN)",
+    "aliases": ["bun", "blood urea nitrogen", "urea nitrogen", "blood urea", "urea"],
+    "unit": "mg/dL",
+    "default": {"low": 7.0, "high": 20.0},
+    "category": "Kidney Function",
+    "explanation": {
+      "low": "Your BUN/urea is below the typical reference range. Discuss with your healthcare provider.",
+      "high": "Your BUN/urea is above the typical reference range. This may relate to kidney function, hydration, or other factors. Discuss with your healthcare provider.",
+      "normal": "Your BUN/urea is within the typical reference range."
+    }
+  },
+  "egfr": {
+    "name": "eGFR",
+    "aliases": ["egfr", "estimated gfr", "gfr"],
+    "unit": "mL/min/1.73m²",
+    "default": {"low": 90.0, "high": 120.0},
+    "category": "Kidney Function",
+    "invert_status": true,
+    "explanation": {
+      "low": "Your eGFR is below the typical range and may suggest reduced kidney filtration. Discuss with your healthcare provider.",
+      "high": "Your eGFR is within or above the typical range.",
+      "normal": "Your eGFR is within the typical reference range."
+    }
+  },
+  "alt": {
+    "name": "ALT (SGPT)",
+    "aliases": ["alt", "sgpt", "alanine aminotransferase", "alanine transaminase"],
+    "unit": "U/L",
+    "default": {"low": 7.0, "high": 56.0},
+    "category": "Liver Function",
+    "explanation": {
+      "low": "Your ALT is below the typical reference range. Discuss with your healthcare provider if unexpected.",
+      "high": "Your ALT is above the typical reference range. ALT relates to liver enzyme activity. Discuss with your healthcare provider.",
+      "normal": "Your ALT is within the typical reference range."
+    }
+  },
+  "ast": {
+    "name": "AST (SGOT)",
+    "aliases": ["ast", "sgot", "aspartate aminotransferase", "aspartate transaminase"],
+    "unit": "U/L",
+    "default": {"low": 10.0, "high": 40.0},
+    "category": "Liver Function",
+    "explanation": {
+      "low": "Your AST is below the typical reference range. Discuss with your healthcare provider if unexpected.",
+      "high": "Your AST is above the typical reference range. AST relates to liver (and other tissue) enzyme activity. Discuss with your healthcare provider.",
+      "normal": "Your AST is within the typical reference range."
+    }
+  },
+  "bilirubin_total": {
+    "name": "Total Bilirubin",
+    "aliases": ["total bilirubin", "bilirubin total", "bilirubin", "tbil"],
+    "unit": "mg/dL",
+    "default": {"low": 0.1, "high": 1.2},
+    "category": "Liver Function",
+    "explanation": {
+      "low": "Your total bilirubin is below the typical reference range. Discuss with your healthcare provider if unexpected.",
+      "high": "Your total bilirubin is above the typical reference range. Discuss with your healthcare provider.",
+      "normal": "Your total bilirubin is within the typical reference range."
+    }
+  },
+  "vitamin_d": {
+    "name": "Vitamin D",
+    "aliases": ["vitamin d", "vit d", "25-oh vitamin d", "25 hydroxy vitamin d", "25(oh)d", "cholecalciferol"],
+    "unit": "ng/mL",
+    "default": {"low": 30.0, "high": 100.0, "borderline_low": 20.0},
+    "category": "Vitamins",
+    "explanation": {
+      "low": "Your vitamin D is below the typical sufficiency range. Discuss supplementation and sun exposure guidance with your healthcare provider.",
+      "borderline": "Your vitamin D may be insufficient. Discuss with your healthcare provider.",
+      "high": "Your vitamin D is above the typical reference range. Excess vitamin D can be harmful. Discuss with your healthcare provider.",
+      "normal": "Your vitamin D is within a commonly sufficient range."
+    }
+  },
+  "vitamin_b12": {
+    "name": "Vitamin B12",
+    "aliases": ["vitamin b12", "vit b12", "b12", "cobalamin"],
+    "unit": "pg/mL",
+    "default": {"low": 200.0, "high": 900.0},
+    "category": "Vitamins",
+    "explanation": {
+      "low": "Your vitamin B12 is below the typical reference range. Low B12 may relate to fatigue or neurological symptoms. Discuss with your healthcare provider.",
+      "high": "Your vitamin B12 is above the typical reference range. Discuss with your healthcare provider.",
+      "normal": "Your vitamin B12 is within the typical reference range."
+    }
+  },
+  "tsh": {
+    "name": "TSH",
+    "aliases": ["tsh", "thyroid stimulating hormone", "thyrotropin"],
+    "unit": "mIU/L",
+    "default": {"low": 0.4, "high": 4.0},
+    "category": "Thyroid",
+    "explanation": {
+      "low": "Your TSH is below the typical reference range. This may relate to thyroid overactivity. Discuss with your healthcare provider.",
+      "high": "Your TSH is above the typical reference range. This may relate to thyroid underactivity. Discuss with your healthcare provider.",
+      "normal": "Your TSH is within the typical reference range."
+    }
+  },
+  "iron": {
+    "name": "Serum Iron",
+    "aliases": ["serum iron", "iron", "fe"],
+    "unit": "μg/dL",
+    "default": {"low": 60.0, "high": 170.0},
+    "category": "Iron Status",
+    "explanation": {
+      "low": "Your serum iron is below the typical reference range. This may relate to iron deficiency. Discuss with your healthcare provider.",
+      "high": "Your serum iron is above the typical reference range. Discuss with your healthcare provider.",
+      "normal": "Your serum iron is within the typical reference range."
+    }
+  },
+  "ferritin": {
+    "name": "Ferritin",
+    "aliases": ["ferritin", "serum ferritin"],
+    "unit": "ng/mL",
+    "male": {"low": 30.0, "high": 400.0},
+    "female": {"low": 15.0, "high": 150.0},
+    "default": {"low": 15.0, "high": 400.0},
+    "category": "Iron Status",
+    "explanation": {
+      "low": "Your ferritin is below the typical reference range. Low ferritin often indicates low iron stores. Discuss with your healthcare provider.",
+      "high": "Your ferritin is above the typical reference range. Discuss with your healthcare provider.",
+      "normal": "Your ferritin is within the typical reference range."
+    }
+  }
+}

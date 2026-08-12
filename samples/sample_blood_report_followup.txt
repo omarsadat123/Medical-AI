@@ -1,0 +1,33 @@
+Complete Blood Count & Metabolic Panel
+Patient: Demo Patient
+Sex: Female
+Report Date: 20/06/2026
+
+Investigation                 Result      Unit      Reference Range
+Hemoglobin                   12.4        g/dL      12.0-15.0
+Hematocrit                   37.2        %         36.0-46.0
+RBC                          4.2         million/μL 4.0-5.0
+WBC                          7.1         ×10³/μL   4.0-11.0
+Platelets                    275         ×10³/μL   150-450
+
+Fasting Glucose              104         mg/dL     70-99
+HbA1c                        5.6         %         4.0-5.6
+
+Total Cholesterol            195         mg/dL     <200
+LDL Cholesterol              118         mg/dL     <100
+HDL Cholesterol              52          mg/dL     >50
+Triglycerides                140         mg/dL     <150
+
+Creatinine                   0.85        mg/dL     0.6-1.1
+Blood Urea Nitrogen          13          mg/dL     7-20
+eGFR                         98          mL/min/1.73m² >90
+
+ALT                          29          U/L       7-56
+AST                          25          U/L       10-40
+Total Bilirubin              0.7         mg/dL     0.1-1.2
+
+Vitamin D                    28          ng/mL     30-100
+Vitamin B12                  480         pg/mL     200-900
+TSH                          1.9         mIU/L     0.4-4.0
+Serum Iron                   68          μg/dL     60-170
+Ferritin                     35          ng/mL     15-150
