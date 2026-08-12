@@ -1,20 +1,26 @@
 # MediParse — AI Medical Test Report Analyzer
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
-[![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B.svg)](https://streamlit.io)
-[![FastAPI](https://img.shields.io/badge/API-FastAPI-009688.svg)](https://fastapi.tiangolo.com)
-[![Educational](https://img.shields.io/badge/use-educational%20%2F%20portfolio-orange.svg)](#important-disclaimer)
+<p align="center">
+  <img src="docs/screenshots/01-home.png" alt="MediParse interface preview" width="960"/>
+</p>
 
-<div style="background: linear-gradient(90deg, #0f766e 0%, #0b1220 100%); border-radius: 16px; padding: 22px 22px; color: #ffffff; box-shadow: 0 8px 24px rgba(2, 6, 23, 0.25);">
-  <div style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px; font-weight: 700; letter-spacing: -0.02em;">MediParse</div>
-  <div style="margin-top: 6px; font-size: 16px; opacity: 0.92;">Educational lab-report understanding pipeline for scans & text</div>
-  <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 10px;">
-    <span style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 6px 12px; font-weight: 700; font-size: 13px;">OCR → Structured Biomarkers</span>
-    <span style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 6px 12px; font-weight: 700; font-size: 13px;">Explainability-first UX</span>
-    <span style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 6px 12px; font-weight: 700; font-size: 13px;">Trends + Risk (educational)</span>
-    <span style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 6px 12px; font-weight: 700; font-size: 13px;">Clinician PDF export</span>
-  </div>
-</div>
+<p align="center">
+  <strong>Educational lab-report intelligence for OCR, structured biomarkers, explainable insights, and clinician-ready summaries.</strong>
+</p>
+
+<p align="center">
+  <img alt="Python 3.10+" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white">
+  <img alt="UI Streamlit" src="https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit&logoColor=white">
+  <img alt="API FastAPI" src="https://img.shields.io/badge/API-FastAPI-009688?logo=fastapi&logoColor=white">
+  <img alt="Use educational and portfolio" src="https://img.shields.io/badge/Use-Educational%20%2F%20Portfolio-EA580C">
+</p>
+
+<p align="center">
+  <img alt="OCR to Biomarkers" src="https://img.shields.io/badge/OCR-%E2%86%92%20Structured%20Biomarkers-0F766E">
+  <img alt="Explainability-first UX" src="https://img.shields.io/badge/Explainability-First%20UX-0B1220">
+  <img alt="Trends and risk" src="https://img.shields.io/badge/Trends%20%2B%20Risk-Educational-0369A1">
+  <img alt="Clinician PDF export" src="https://img.shields.io/badge/Clinician-PDF%20Export-334155">
+</p>
 
 **MediParse** is a research-style engineering demo: an end-to-end pipeline that converts lab report inputs (PDFs, scans, and pasted text) into structured biomarkers, plain-language explanations, longitudinal trends (history/compare), and educational risk estimates—with clear safety framing and clinician-ready PDF summaries.
 
