@@ -1,0 +1,48 @@
+{
+  "condition": "diabetes",
+  "label": "Diabetes risk",
+  "description": "Educational estimate related to glycemic markers.",
+  "features": [
+    "glucose_fasting",
+    "hba1c",
+    "glucose_random",
+    "bmi",
+    "age",
+    "triglycerides"
+  ],
+  "medians": {
+    "glucose_fasting": 100.88923178464218,
+    "hba1c": 5.945482908552595,
+    "glucose_random": 109.51108756218932,
+    "bmi": 26.665497767343602,
+    "age": 45.31684934188432,
+    "triglycerides": 132.9525433631669
+  },
+  "model_type": "xgboost",
+  "metrics": {
+    "random_forest": {
+      "accuracy": 0.959,
+      "f1": 0.9656,
+      "roc_auc": 0.993
+    },
+    "xgboost": {
+      "accuracy": 0.953,
+      "f1": 0.9609,
+      "roc_auc": 0.9933
+    },
+    "selected": {
+      "accuracy": 0.953,
+      "f1": 0.9609,
+      "roc_auc": 0.9933
+    }
+  },
+  "feature_importances": {
+    "glucose_fasting": 0.22357700765132904,
+    "hba1c": 0.5941516757011414,
+    "glucose_random": 0.027790172025561333,
+    "bmi": 0.05709431692957878,
+    "age": 0.025488290935754776,
+    "triglycerides": 0.07189858704805374
+  },
+  "disclaimer": "Educational risk estimate only \u2014 not a diagnosis or clinical decision tool."
+}

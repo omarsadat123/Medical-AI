@@ -1,0 +1,51 @@
+{
+  "condition": "anemia",
+  "label": "Anemia risk",
+  "description": "Educational estimate related to iron and blood count markers.",
+  "features": [
+    "hemoglobin",
+    "hematocrit",
+    "rbc",
+    "iron",
+    "ferritin",
+    "sex_female",
+    "age"
+  ],
+  "medians": {
+    "hemoglobin": 11.758435573228969,
+    "hematocrit": 35.900821034456456,
+    "rbc": 4.490021819374254,
+    "iron": 78.7824232885057,
+    "ferritin": 70.54037852413204,
+    "sex_female": 0.15951879802860158,
+    "age": 44.93572375521127
+  },
+  "model_type": "xgboost",
+  "metrics": {
+    "random_forest": {
+      "accuracy": 0.968,
+      "f1": 0.9641,
+      "roc_auc": 0.9965
+    },
+    "xgboost": {
+      "accuracy": 0.967,
+      "f1": 0.9628,
+      "roc_auc": 0.9973
+    },
+    "selected": {
+      "accuracy": 0.967,
+      "f1": 0.9628,
+      "roc_auc": 0.9973
+    }
+  },
+  "feature_importances": {
+    "hemoglobin": 0.18201591074466705,
+    "hematocrit": 0.027915075421333313,
+    "rbc": 0.008238736540079117,
+    "iron": 0.07174856960773468,
+    "ferritin": 0.6679549813270569,
+    "sex_female": 0.032822802662849426,
+    "age": 0.009303941391408443
+  },
+  "disclaimer": "Educational risk estimate only \u2014 not a diagnosis or clinical decision tool."
+}

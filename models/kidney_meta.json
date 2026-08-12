@@ -1,0 +1,48 @@
+{
+  "condition": "kidney",
+  "label": "Kidney disease risk",
+  "description": "Educational estimate related to kidney function markers.",
+  "features": [
+    "creatinine",
+    "bun",
+    "egfr",
+    "age",
+    "glucose_fasting",
+    "hemoglobin"
+  ],
+  "medians": {
+    "creatinine": 1.2535539442695014,
+    "bun": 15.962517377991254,
+    "egfr": 83.69291960667493,
+    "age": 44.72839451205046,
+    "glucose_fasting": 92.00733654962076,
+    "hemoglobin": 13.497777184925347
+  },
+  "model_type": "random_forest",
+  "metrics": {
+    "random_forest": {
+      "accuracy": 0.954,
+      "f1": 0.9559,
+      "roc_auc": 0.9921
+    },
+    "xgboost": {
+      "accuracy": 0.95,
+      "f1": 0.9523,
+      "roc_auc": 0.9907
+    },
+    "selected": {
+      "accuracy": 0.954,
+      "f1": 0.9559,
+      "roc_auc": 0.9921
+    }
+  },
+  "feature_importances": {
+    "creatinine": 0.4622369247939888,
+    "bun": 0.2368856390026124,
+    "egfr": 0.27218755291231184,
+    "age": 0.011675575378176095,
+    "glucose_fasting": 0.008237039550777156,
+    "hemoglobin": 0.008777268362133607
+  },
+  "disclaimer": "Educational risk estimate only \u2014 not a diagnosis or clinical decision tool."
+}

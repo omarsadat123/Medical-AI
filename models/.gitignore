@@ -1,0 +1,7 @@
+# Model artifacts (joblib + metadata). Regenerate with:
+#   python scripts/train_risk_models.py
+*
+!.gitignore
+!*.joblib
+!*.json
+!README.md

@@ -1,0 +1,54 @@
+{
+  "condition": "heart",
+  "label": "Heart disease risk",
+  "description": "Educational estimate related to lipid and metabolic markers.",
+  "features": [
+    "total_cholesterol",
+    "ldl",
+    "hdl",
+    "triglycerides",
+    "glucose_fasting",
+    "age",
+    "systolic_bp",
+    "bmi"
+  ],
+  "medians": {
+    "total_cholesterol": 196.50950662190442,
+    "ldl": 111.15888316581365,
+    "hdl": 48.859834299417116,
+    "triglycerides": 119.59329580020452,
+    "glucose_fasting": 91.96776935213072,
+    "age": 45.01986378726809,
+    "systolic_bp": 130.6139706459411,
+    "bmi": 24.476592614810617
+  },
+  "model_type": "random_forest",
+  "metrics": {
+    "random_forest": {
+      "accuracy": 0.937,
+      "f1": 0.9277,
+      "roc_auc": 0.9792
+    },
+    "xgboost": {
+      "accuracy": 0.938,
+      "f1": 0.9295,
+      "roc_auc": 0.9768
+    },
+    "selected": {
+      "accuracy": 0.937,
+      "f1": 0.9277,
+      "roc_auc": 0.9792
+    }
+  },
+  "feature_importances": {
+    "total_cholesterol": 0.1682607998291402,
+    "ldl": 0.3815766650230149,
+    "hdl": 0.2799813224305191,
+    "triglycerides": 0.009394409473136703,
+    "glucose_fasting": 0.008560565492034813,
+    "age": 0.009010486096543681,
+    "systolic_bp": 0.13380170989146853,
+    "bmi": 0.00941404176414211
+  },
+  "disclaimer": "Educational risk estimate only \u2014 not a diagnosis or clinical decision tool."
+}
